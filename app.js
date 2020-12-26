@@ -40,3 +40,10 @@ new hoverEffect({
     image2: './img/Background.jpg',
     displacementImage: './img/submit.png'
 });
+new hoverEffect({
+    parent: document.querySelector('.img7'),
+    intensity: 0.4,
+    image1: './img/Foreground.jpg',
+    image2: './img/Background.jpg',
+    displacementImage: './img/sun.png'
+});
