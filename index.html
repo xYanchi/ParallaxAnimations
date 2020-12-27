@@ -7,25 +7,53 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald&display=swap" rel="stylesheet">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    
-    <h1>Tech [D] Step</h1>
-    <div class="container">
-        <div class="img1"></div>
-        <div class="img2"></div>
-        <div class="img3"></div>
-        <div class="img4"></div>
-        <div class="img5"></div>
-        <div class="img6"></div>
-        <div class="img7"></div>
+    <div class="parallax-container">
+        <div class="rellax" data-rellax-speed="-6">
+            <div data-aos="flip-right">Tech [D] Step</div>
+        </div>
+        <img src="img/ocean.jpg" alt="">
     </div>
-
+    
+    <div class="container">
+        <div class="img1" data-aos="fade-down"
+                          data-aos-easing="linear"
+                          data-aos-duration="700"></div>
+        <div class="img2" data-aos="fade-down"
+                          data-aos-easing="linear"
+                          data-aos-duration="700"></div>
+        <div class="img3" data-aos="fade-down"
+                          data-aos-easing="linear"
+                          data-aos-duration="700"></div>
+        <div class="img4" data-aos="fade-down"
+                          data-aos-easing="linear"
+                          data-aos-duration="700"></div>
+        <div class="img5" data-aos="fade-down"
+                          data-aos-easing="linear"
+                          data-aos-duration="700"></div>
+        <div class="img6" data-aos="fade-down"
+                          data-aos-easing="linear"
+                          data-aos-duration="700"></div>
+        <div class="img7" data-aos="fade-down"
+                          data-aos-easing="linear"
+                          data-aos-duration="700"></div>
+        <div class="img8" data-aos="fade-down"
+                          data-aos-easing="linear"
+                          data-aos-duration="700"></div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js" integrity="sha512-jeYvJdyAYkpQCY/omvCYQo89qA5YxDW4JBT7COPsHT2sOAanwxkZRFeP9gc69b5reSDpZIoyCqZQZcWZkbB5Gw==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
     <script src="hover.js"></script>
-    <script src="app.js"></script>
+    <script src="rellax.js"></script>
+
+    <script src="parallax.js"></script>
+    <script src="transitions.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
