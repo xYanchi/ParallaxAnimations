@@ -12,6 +12,8 @@ body {
 .parallax-container {
 	position: relative;
 	text-align: center;
+	transform-style: preserve-3d;
+	/* border: 1px solid red; */
 }
 .parallax-container img,
 .rellax {
@@ -24,6 +26,7 @@ body {
 	justify-content: center;
 	top: 40%;
 	font-size: 70px;
+	transform: translateZ(20px);
 	/* border: 1px solid; */
 }
 .container {
