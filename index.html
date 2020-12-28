@@ -10,9 +10,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <div class="parallax-container">
+    <div class="parallax-container puff-in-center">
+        <!-- <img class="scale-out-hor-right imgStrip" src="img/strip.png" alt=""> -->
         <div class="rellax" data-rellax-speed="-6">
-            <div data-aos="flip-right" class="blur-out-expand-fwd text-shadow-pop-br">Tech [D] Step</div>
+            <div data-aos="flip-right" class="blur-out-expand-fwd">Tech [D] Step</div>
         </div>
         <img class="kenburns-top" src="img/ocean.jpg" alt="">
     </div>
@@ -59,11 +60,14 @@
     <script src="hover.js"></script>
     <script src="rellax.js"></script>
 
-    <script src="parallax.js"></script>
     <script src="transitions.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <script>
+        new Rellax('.rellax');
     </script>
 
     <script>
