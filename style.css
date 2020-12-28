@@ -667,9 +667,6 @@ body {
 	cursor: pointer;
 	color: #e6959f;
 }
-.heartBeatPress {
-	/* border: 1px solid green; */
-}
 .hiddenDiv,
 .appearDiv,
 .restartDiv {
