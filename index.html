@@ -12,8 +12,8 @@
   />
 </head>
 <body>
-<!--     
-    <div class="parallax-container puff-in-center">
+    
+    <!-- <div class="parallax-container puff-in-center">
         <div class="rellax" data-rellax-speed="-6">
             <div data-aos="flip-right" class="blur-out-expand-fwd">Tech [D] Step</div>
         </div>
@@ -54,10 +54,20 @@
                           data-aos-duration="700"
                           data-tilt></div>
     </div> -->
-    <div class="parallax-horizontal animate__animated animate__tada" >
+    <div class="parallax-horizontal animate__animated animate__tada"> 
         <img class="heartbeat" src="img/heart.png" alt="heartbeat">
         <h1 class="text-pop-up-top heartBeatPress">Press</h1>
     </div>
+    <div class="hiddenDiv">
+        <img class="hiddenImg roll-in-right" src="img/submit.png" alt="" hidden>
+    </div>
+    <div class="appearDiv">
+        <h1 class="appearMsg scale-in-hor-center" hidden>I love you Jana <3</h1>
+    </div>
+    <div class="restartDiv">
+        <p class="btnRestart vibrate-1" hidden>Restart</p>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js" integrity="sha512-jeYvJdyAYkpQCY/omvCYQo89qA5YxDW4JBT7COPsHT2sOAanwxkZRFeP9gc69b5reSDpZIoyCqZQZcWZkbB5Gw==" crossorigin="anonymous"></script>
@@ -80,12 +90,42 @@
         //     glare: true,
         //     maxGlare: .5
         // });
-        $('.img2').tilt({
-            reset: false
+        // $('.img2').tilt({
+        //     reset: false
+        // });
+        // $('.img3').tilt({
+        //     scale: 1.2
+        // });
+        $('.heartBeatPress').click(function(){
+            $('.parallax-horizontal').removeClass("animate__animated");
+            $('.parallax-horizontal').removeClass("animate__tada");
+            $('.parallax-horizontal').addClass("bounce-out-left");
+            setTimeout(function(){
+                $('.hiddenImg').removeAttr('hidden');
+            }, 1500);
         });
-        $('.img3').tilt({
-            scale: 1.2
+        $('.hiddenImg').click(function(){
+            $('.hiddenImg').addClass("scale-out-horizontal");
+            setTimeout(function(){
+                $('.appearMsg').removeAttr('hidden');
+            }, 1000);
+            setTimeout(function(){
+                $('.btnRestart').addClass("bounce-in-bck");
+                $('.btnRestart').attr('hidden', false);
+            }, 2000);
+        });
+        $('.btnRestart').click(function(){
+            // $('.btnRestart').attr("hidden", true);
+            
+            $('.appearMsg').addClass("slide-out-top");
+
+            $('.btnRestart').addClass("slide-out-top");
+            setTimeout(() => {
+                window.location.reload();
+            }, 500);
+            
         });
     </script>
+    
 </body>
 </html>
