@@ -16,13 +16,14 @@
         <nav>
             <ul>
                 <li class="hoverli"><a href="">Home</a></li>
-                <li class="hoverli"><a href="">Description</a></li>
+                <li class="hoverli"><a href="">Services</a></li>
                 <li class="hoverli"><a href="">Our Team</a></li>
+                <li class="hoverli"><a href="">Projects</a></li>
                 <li class="hoverli"><a href="">Contact Us</a></li>
             </ul>
         </nav>
         <div class="rellax" data-rellax-speed="-6" data-tilt>
-            <div data-aos="flip-right">Tech [D] Step</div>
+            <div class="techDStep" data-aos="flip-right">Tech [D] Step</div>
         </div>
         <img class="kenburns-top" src="img/ocean.jpg" alt="">
     </div>
@@ -108,6 +109,13 @@
         });
         $('.hoverli').mouseleave(function(){
             $(this).removeClass("animate__animated animate__rubberBand");
+        });
+        
+        $('.techDStep').mouseenter(function(){
+            $(this).addClass("animate__animated animate__jello");
+        });
+        $('.techDStep').mouseleave(function(){
+            $(this).removeClass("animate__animated animate__jello");
         });
         // $('.heartBeatPress').click(function(){
         //     $('.parallax-horizontal').removeClass("animate__animated");

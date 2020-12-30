@@ -4,7 +4,6 @@
 	box-sizing: border-box;
 	font-family: "Lobster", cursive;
 	color: white;
-	/* font-size: 100px; */
 }
 body {
 	background-color: rgb(13, 17, 23);
@@ -17,30 +16,28 @@ body {
 .parallax-container nav {
 	position: absolute;
 	z-index: 100;
-	/* border: 1px solid green; */
-	width: 50%;
-	left: 50%;
+	width: 60%;
+	left: 40%;
 	top: 7%;
 }
+.techDStep {
+	margin-top: -10%;
+}
 .parallax-container nav ul {
-	/* border: 1px solid red; */
 	display: flex;
 	justify-content: space-evenly;
 	list-style: none;
 }
 .parallax-container nav ul li {
 	display: flex;
-	align-items: center;
 	height: 50px;
-	/* border: 1px solid; */
 }
 .parallax-container nav ul a {
 	font-size: 1.5em;
 	color: white;
 	text-decoration: none;
 }
-.parallax-container img,
-.rellax {
+.parallax-container img {
 	width: 100%;
 	height: 100vh;
 }
@@ -48,18 +45,15 @@ body {
 	position: absolute;
 	display: flex;
 	justify-content: center;
-	/* top: 40%; */
 	font-size: 70px;
 	z-index: 10;
-	/* border: 1px solid; */
-	/* top: 12%; */
+	width: 100%;
+	top: 50%;
 }
 .rellax div {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 100%;
-	/* border: 1px solid red; */
 }
 .kenburns-top {
 	animation: kenburns-top 3s ease-in-out infinite alternate both;
@@ -729,4 +723,24 @@ body {
 .hiddenImg,
 .restartDiv p {
 	cursor: pointer;
+}
+
+/* Tablet */
+@media only screen and (max-width: 800px) {
+	.parallax-container nav {
+		width: 100%;
+		left: 0;
+		/* border: 1px solid; */
+	}
+}
+/* Mobile */
+@media only screen and (max-width: 600px) {
+	.parallax-container nav {
+		width: 100%;
+		left: 0;
+		/* border: 1px solid; */
+	}
+	.parallax-container nav ul a {
+		font-size: 1em;
+	}
 }
